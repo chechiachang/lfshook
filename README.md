@@ -70,7 +70,7 @@ func NewLogger() *logrus.Logger {
 			logrus.InfoLevel:  writer,
 			logrus.ErrorLevel: writer,
 		},
-		&logrus.JSONFormatter,
+		&logrus.JSONFormatter{},
 	))
 
 	Log = logrus.New()
